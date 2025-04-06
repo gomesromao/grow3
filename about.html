@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<!-- Mirrored from themes.themewild.com/edulife/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Mar 2025 01:34:31 GMT -->
+<head>
+		<!-- Meta Tags-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Title -->
+		<title>About Us</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="assets/img/favicon.png">
+		<!-- Google Web Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="assets/css/slicknav.min.css">
+        <!-- Magnific Popup -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		
+		<!-- Site Css -->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+		<link href=" https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css " rel="stylesheet">
+		<style>
+		.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.bg-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.30); 
+    z-index: 1;
+}
+
+.single-slider.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-slider .container,
+.single-slider .slider-text {
+    position: relative;
+    z-index: 2;
+}
+
+.grow-leadership-block {
+  background-color: #fff;
+  padding: 130px 20px;
+}
+
+.grow-leadership-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  /* animation inittial state */
+  opacity: 1;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.grow-leadership-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grow-leadership-left {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+
+.grow-leadership-left h2 {
+  font-size: 2.15rem;
+  color: #252525;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.grow-highlight {
+  color: #46c6a1;
+}
+
+.grow-leadership-right {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+
+.grow-leadership-right p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .grow-leadership-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .grow-leadership-left,
+  .grow-leadership-right {
+    flex: 1 1 100%;
+    padding: 10px 0;
+  }
+
+  .grow-leadership-left h2 {
+    font-size: 1.5rem;
+  }
+}
+
+	.icon-group-grow i {
+  color: white;
+  padding-top: 3px;
+  font-size: 1.3rem;
+}
+
+ .grow-section {
+    background: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .grow-title {
+    font-size: 3.0rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #252525;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grow-static {
+    color: #252525;
+    white-space: nowrap;
+  }
+
+  .grow-dynamic {
+    color: #46c6a1;
+    display: inline-block;
+    width: 250px; 
+    text-align: left;
+    margin-left: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+
+
+  
+  @media (max-width: 500px) {
+  .grow-title {
+    flex-direction: column;
+  }
+
+  .grow-dynamic {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 2.5rem; /* opcional: para ajustar o tamanho no mobile */
+    white-space: normal; /* permite quebra de linha no mobile */
+  }
+  
+  .grow-section {
+  padding:60px 20px;
+}
+}
+  
+  @media (max-width: 767px) {
+  .grow-leadership-block {
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  
+  #about-us{
+  max-width:100% !important;
+  }
+  
+.cta .cta-inner {
+  padding:
+2.0rem !important;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .home-slider .single-slider .slider-text, .home-slider .single-slider .text-center, .home-slider .single-slider .text-right {
+    text-align: left !important;
+    margin-left: 8%;
+  }
+}
+	@media only screen and (max-width: 767px) {
+  .home-slider .single-slider h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-slider .single-slider .slider-text p, .home-slider .single-slider .text-center p, .home-slider .single-slider .text-right p {
+    font-size: 16px;
+  }
+  
+  .courses {
+  padding: 60px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .grow-leadership-left h2 {
+    font-size: 2.0rem;
+    text-align: left !important;
+    margin-left: 8%;
+  }
+  
+  .grow-leadership-right p {
+  text-align: left !important;
+    margin-left: 8%;
+}
+
+.enroll {
+  padding:40px 20px 40px;
+}
+.section {
+  padding:
+50px 0;
+}
+
+ .section-title .test{
+    margin-bottom: 20px;
+  }
+  
+  .footer .footer-top {
+  padding:0px 30px 90px;
+}
+
+}
+
+
+
+		</style>
+		
+		
+
+	
+		
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-page"></div>
+                <div class="loader-page"></div>
+                <div class="loader-page"></div>
+            </div>
+        </div>
+		<!--/ End Preloader -->
+
+	
+		<!-- Header -->
+		<header class="header">
+			<!-- Topbar 
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-12">
+							
+							<ul class="content">
+								<li><i class="far fa-solid-phone"></i> (+1) 123 456 7894 </li>
+								<li><a href="https://themes.themewild.com/cdn-cgi/l/email-protection#1c75727a735c79647d716c7079327f7371"><i class="far fa-solid-envelope"></i> <span class="__cf_email__" data-cfemail="89e0e7efe6c9ecf1e8e4f9e5eca7eae6e4">[email&#160;protected]</span> </a></li>
+								<li><i class="far fa-solid-clock"></i>Office Hour: 08:00AM - 06:00PM</li>
+							</ul>
+							
+						</div>
+						<div class="col-lg-4 col-12">
+						    <div class="topbar-right">
+							
+							<ul class="social">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+							
+							<div class="search">
+								<ul >
+									<li class="search_btn"><a href="#"><i class="far fa-solid-search"></i></a></li>
+								</ul>
+								<div class="header_search_content">
+									<div class="header_search_content_inner">
+										<a href="#" class="close_btn"><i class="fal fa-times"></i></a>
+										<form id="searchbox" method="get" action="#">
+											<input class="search_query" type="text" id="search_query_top" name="s" placeholder="Enter Keyword" value="">
+											<button type="submit" class="btn close-search"><i class="fal fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<!-- End Topbar -->
+            <!-- Header Inner -->
+			<div class="header-inner header-inner3">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-12">
+							<div class="logo">
+								<a href="index.html"><img src="assets/img/logo.png" alt="#"></a>
+							</div>
+							<div class="mobile-menu"></div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-12">
+							<!-- Header Menu -->
+                            <div class="header-menu3">
+                                <nav class="navbar navbar-default">
+                                    <div class="navbar-collapse">
+                                        <!-- Main Menu -->
+                                        <ul id="nav" class="nav menu navbar-nav">
+                                         
+											<li ><a href="index.html">Homepage</a></li>
+                                            <li><a href="index.html#courses">Courses<i class="far fa-solid fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                <li><a href="2-day-governance-masterclass.html">2-Day Governance Masterclass</a></li>
+                                                <li><a href="digital-business-strategy-&-leadership.html">Digital Business Strategy & Leadership (DBSL) | Courses</a></li>
+                                                <li><a href="agile-talent-management.html">Agile Talent Management</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                           <!--- <li><a href="#">Courses<i class="far fa-solid-angle-down"></i></a> 
+                                                <ul class="dropdown">
+                                                    <li><a href="courses.html">Courses</a></li>
+                                                    <li><a href="course-single.html">Course Single</a></li>
+                                                    <li><a href="course-single-video.html">Course Single Video</a></li>
+                                                </ul>
+                                            </li> --->
+											<li class="active"><a href="about.html">About</a></li>
+											<li><a href="#">Consulting</a></li>
+											<li><a href="calendar.html">Calendar</a></li>
+                                            <!---<li><a href="#">Events<i class="far fa-solid-angle-down"></i></a> 
+                                                <ul class="dropdown">
+                                                    <li><a href="events.html">Events</a></li>
+                                                    <li><a href="event-single.html">Event Single</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Blogs<i class="far fa-solid-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="blogs.html">Blogs Grid Layout</a></li>
+                                                    <li><a href="blogs-left-sidebar.html">Blogs Left Sidebar</a></li>
+                                                    <li><a href="blogs-right-sidebar.html">Blogs Right Sidebar</a></li>
+                                                    <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
+                                                    <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>--->
+                                        <!-- End Main Menu -->
+                                        <!-- button -->
+                                        <div class="button">
+                                            <a href="contact.html" class="btn"><i class="far fa-pencil"></i>Apply Now</a>
+                                        </div>
+                                        <!--/ End Button -->
+                                    </div> 
+                                </nav>
+                            </div>
+                            <!--/ End Header Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header -->
+		
+		<!-- Slider Area -->
+		<section class="home-slider">
+			<div class="hero-slider owl-carousel owl-theme">
+				<!-- Single Slider -->	
+				<!--/ End Single Slider -->
+				<!-- Single Slider -->
+			<div class="single-slider overlay">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="assets/img/slider/grow.mp4" type="video/mp4">
+        <img src="assets/img/slider/2.png" alt="" />
+    </video>
+
+    <!-- Filter -->
+    <div class="video-overlay"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="slider-text text-center">
+                <h1>Digital Business Strategy <br>& <span>Leadership Courses</span></h1>
+                <p>Lead with confidence. Embrace innovation. Drive sustainable results. <br>Dot Grow is your partner in redefining the future.</p>
+                <div class="button">
+                    <a href="index.html#courses" class="btn primary">Our Courses</a>
+                    <a href="#about-us" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+				<!--/ End Single Slider -->
+				<!-- Single Slider -->
+			
+				<!--/ End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		
+		
+		
+	
+		
+	
+		
+		
+		
+		
+		<section class="grow-leadership-block">
+  <div class="grow-leadership-container scroll-fade-in">
+    <div class="grow-leadership-left">
+      <h2>
+        Bold leadership. <span class="grow-highlight">Global insights.</span><br>
+        Local impact.
+      </h2>
+    </div>
+    <div class="grow-leadership-right">
+      <p>
+        At .Grow, we expand possibilities, drive transformation, and empower agile leaders with real-world expertise. 
+        With a hands-on approach, we equip you to lead, innovate, and create lasting impact.
+      </p>
+    </div>
+  </div>
+</section>	
+		
+		
+		
+		
+		
+		
+<!-- Call To Action -->
+<section class="cta" data-stellar-background-ratio="0.5">
+  <style>
+    @media (min-width: 768px) {
+      .cta-columns {
+        display: flex;
+        gap: 2rem;
+      }
+      .cta-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    .cta-column {
+      box-sizing: border-box;
+    }
+    .cta-inner h2 i,
+    .cta-inner h3 i {
+      color: white;
+    }
+	
+	  .cta {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .cta.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  </style>
+
+  <div class="container" style="max-width: 85%; margin: 0 auto; padding: 6rem 1rem;"id="about-us">
+    <div class="row">
+      <div class="col-12">
+        <div class="cta-inner overlay"  style="background: rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 4.5rem; position: relative; color: white;">
+          <div class="text-content" style="position: relative; z-index: 2;">
+            
+            <!-- Título principal -->
+            <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 1rem;">
+             Who We Are
+            </h2>
+            <p style="margin-bottom: 1.5rem;">
+              Founded in Curaçao, .Grow bridges the gap between the Caribbean and global markets, creating transformative learning experiences. We are young, disruptive, and technology-driven—committed to practical, forward-thinking education and consulting.
+            </p>
+
+            <!-- Colunas -->
+            <div class="cta-columns">
+              
+              <!-- Coluna Esquerda -->
+              <div class="cta-column">
+                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
+                  <i class="fas fa-lightbulb" style="margin-right: 8px;"></i>What We Do
+                </h3>
+                <p><strong>Post-Graduate Courses</strong> – Future-focused programs designed for executives, entrepreneurs, and decision-makers.</p>
+                <p><strong>Consulting Services</strong> – Tailored solutions to help businesses optimize strategy, digital transformation, and leadership.</p>
+                <p style="margin-bottom: 1.5rem;"><strong>Custom Training & Development</strong> – In-company training and personalized learning experiences that drive organizational growth.</p>
+
+                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
+                  <i class="fas fa-eye" style="margin-right: 8px;"></i>Our Vision
+                </h3>
+                <p>To be the top choice for companies and professionals seeking transformative education and consulting, with people at the core of every strategy. We develop leaders who drive impactful business transformation and societal progress.</p>
+              </div>
+
+              <!-- Coluna Direita -->
+              <div class="cta-column">
+                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
+                  <i class="fas fa-heart" style="margin-right: 8px;"></i>Our Values
+                </h3>
+                <p><strong>Trust & Integrity</strong> – We build strong relationships based on transparency and reliability.</p>
+                <p><strong>Collaboration & Community</strong> – Success is achieved together, through shared knowledge and diverse perspectives.</p>
+                <p style="margin-bottom: 1.5rem;"><strong>Innovation & Agility</strong> – We embrace change and push the boundaries of what’s possible.</p>
+
+                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
+                  <i class="fas fa-globe" style="margin-right: 8px;"></i>Our Global Presence
+                </h3>
+                <p>.Grow is headquartered in Curaçao, with a strong presence in the ABC Islands, Sint Maarten, the Netherlands, Latin America, and the Middle East. Our global reach allows us to bridge ideas and opportunities across diverse business landscapes, ensuring that innovation and leadership development have no borders.</p>
+              </div>
+
+            </div> <!-- fim das colunas -->
+
+          </div> <!-- fim do text-content -->
+        </div> <!-- fim do cta-inner -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+		<!--/ End Call To Action -->
+		
+		
+		
+		<!-- About US -->
+		<section class="about-us section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="single-image overlay">
+							<img src="assets/img/about.jpg" alt="#">
+						
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="about-text">
+							<h2>Join the Movement</h2>
+							<p>This is just the beginning. .Grow is redefining leadership, breaking barriers, and creating an ecosystem where bold ideas turn into lasting impact. Whether you’re looking to advance your career, scale your business, or explore new opportunities, we’re here to help you grow.</p>
+							<p>At .Grow, we believe that innovation thrives where curiosity meets action. We collaborate with forward-thinking professionals, companies, and changemakers who are ready to challenge the status quo. Through cutting-edge programs, hands-on consulting, and a global community of leaders, we’re not just imagining the future—we’re building it together.</p>
+							<br><p>Are you ready to grow with us?</p>
+							
+							<div class="button">
+								<a href="index.html#courses" class="btn">Our Courses</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End About US -->
+		
+		
+		
+		
+		
+		<!-- Team -->
+		<section class="team section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 wow zoomIn">
+						<div class="section-title">
+							<h2>Meet Our <span>Experts</span></h2>
+							<p>This is just the beginning. .Grow is redefining leadership, breaking barriers, and creating an ecosystem where bold ideas turn into lasting impact. Whether you’re looking to advance your career, scale your business, or explore new opportunities, we’re here to help you grow.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.4s">
+						<!-- Single Team -->
+						<div class="single-team">
+							<img src="assets/img/team/1.jpg" alt="#">
+							<div class="team-hover">
+								<h4>Ruth A Chance<span>Associate Professor</span></h4>
+								<ul class="social">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.6s">
+						<!-- Single Team -->
+						<div class="single-team active">
+							<img src="assets/img/team/2.jpg" alt="#">
+							<div class="team-hover">
+								<h4 class="name">Melania Thompson<span class="work">Professor</span></h4>
+								<ul class="social">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.8s">
+						<!-- Single Team -->
+						<div class="single-team">
+							<img src="assets/img/team/3.jpg" alt="#">
+							<div class="team-hover">
+								<h4 class="name">Richard R Myers<span class="work">Associate Professor</span></h4>
+								<ul class="social">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="1s">
+						<!-- Single Team -->
+						<div class="single-team">
+							<img src="assets/img/team/4.jpg" alt="#">
+							<div class="team-hover">
+								<h4 class="name">Marie M Callaway<span class="work">Professor</span></h4>
+								<ul class="social">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Team -->
+		
+	<!-- Footer -->
+		<footer class="footer overlay section">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- About -->
+							<div class="single-widget about">
+								<div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
+								<p>Grow empowers individuals and organizations through advanced education and consulting. Centered on quantum leadership, our programs foster adaptability, innovation, and resilience—equipping leaders to thrive in a fast-changing digital world.</p>
+								<ul class="list">
+									<li><i class="far fa-solid-phone"></i>(+599) 9663-3746</li>
+									<li><i class="far fa-solid-envelope"></i> <a href="https://themes.themewild.com/cdn-cgi/l/email-protection#c9a0a7afa689acb1a8a4b9a5ace7aaa6a4"><span class="__cf_email__" data-cfemail="731a1d151c33160b121e031f165d101c1e">vanessa@thisisgrow.net </span></a></li>
+									<li><i class="far fa-solid-map-marker-alt"></i>Willemstad, Curaçao</li>
+								</ul>
+							</div>
+							<!--/ End About -->
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- Useful Links -->
+							<div class="single-widget useful-links">
+								<h2>Important Links</h2>
+								<ul>
+									<li><a href="about.html"><i class="far fa-solid-angle-double-right"></i>About Us</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Support</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Faq</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Upcoming Events</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Our Blogs</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Terms & Conditions</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Contact Us</a></li>
+									<li><a href="#"><i class="far fa-solid-angle-double-right"></i>Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!--/ End Useful Links -->
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- Latest News -->
+							<div class="single-widget latest-news">
+								<h2>Latest Courses</h2>
+								<div class="news-inner">
+									<div class="single-news">
+										<img src="assets/img/blog/sm-1.jpg" alt="#">
+										<h4><a href="2-day-governance-masterclass.html">2-Day Governance Masterclass</a></h4>
+										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+									</div>
+									<div class="single-news">
+										<img src="assets/img/blog/sm-2.jpg" alt="#">
+										<h4><a href="digital-business-strategy-&-leadership.html">Digital Business Strategy & Leadership</a></h4>
+										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+									</div>
+									<div class="single-news">
+										<img src="assets/img/blog/sm-3.jpg" alt="#">
+										<h4><a href="agile-talent-management.html">Agile Talent Management</a></h4>
+										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+									</div>
+								</div>
+							</div>
+							<!--/ End Latest News -->
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- Newsletter -->
+							<div class="single-widget newsletter">
+								<h2>Newsletter</h2>
+								<div class="mail">
+									<p>Subscribe to our newsletter, Get the latest updates and news from us!</p>
+									<div class="form">
+										<input type="email" placeholder="Enter your email">
+										<button class="button" type="submit"><i class="far fa-paper-plane"></i></button>
+									</div>
+								</div>
+							</div>
+							<!--/ End Newsletter -->
+
+							<!-- Social -->
+							<ul class="social">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+							<!-- End Social -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="bottom-head">
+								<div class="row">
+									<div class="col-12">
+										<!-- Copyright -->
+										<div class="copyright">
+											<p>© Copyright <span id="date"></span> <a href="#">.GROW</a> All Rights Reserved.</p>
+										</div>
+										<!--/ End Copyright -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Bottom -->
+		</footer>
+		<!--/ End Footer -->
+		
+		<!-- Jquery JS-->
+        <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+		<!-- Bootstrap JS-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+		<!-- Jquery Steller JS -->
+		<script src="assets/js/jquery.stellar.min.js"></script>
+		<!-- Fancy Box JS-->
+		<script src="assets/js/facnybox.min.js"></script>
+		<!-- Magnific Popup JS-->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- Circle Progress JS -->
+		<script src="assets/js/circle-progress.min.js"></script>
+		<!-- Owl Carousel JS-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Waypoints JS-->
+        <script src="assets/js/waypoints.min.js"></script>
+		<!-- Slick Nav JS-->
+        <script src="assets/js/slicknav.min.js"></script>
+		<!-- Counter Up JS -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<!-- Easing JS-->
+        <script src="assets/js/easing.min.js"></script>
+		<!-- Wow Min JS-->
+		<script src="assets/js/wow.min.js"></script>
+		<!-- Scroll Up JS-->
+        <script src="assets/js/jquery.scrollUp.min.js"></script>
+		<!-- Main JS-->
+        <script src="assets/js/main.js"></script>
+		
+		
+		<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeInSection = document.querySelector('.scroll-fade-in');
+
+    function checkVisibility() {
+      const rect = fadeInSection.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.8) {
+        fadeInSection.classList.add('visible');
+      }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // caso já esteja visível ao carregar
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+ const phrases = [
+    "Your Knowledge.",
+    "Your Business.",
+    "Your Ideas.",
+    "Your Impact.",
+    "Your Potential."
+  ];
+
+  const dynamicText = document.getElementById("grow-dynamic");
+  let index = 0;
+
+  function showNextPhrase() {
+    // Esconde com fade-out
+    dynamicText.style.opacity = 0;
+
+    setTimeout(() => {
+      // Atualiza texto
+      dynamicText.textContent = phrases[index];
+      // Mostra com fade-in
+      dynamicText.style.opacity = 1;
+
+      // Avança pro próximo
+      index = (index + 1) % phrases.length;
+    }, 500); // tempo do fade-out
+  }
+
+  // Inicia
+  showNextPhrase();
+  setInterval(showNextPhrase, 3000);
+
+
+
+
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cta = document.querySelector('.cta');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          cta.classList.add('fade-in');
+          observer.unobserve(cta); // para animar só uma vez
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    if (cta) {
+      observer.observe(cta);
+    }
+  });
+</script>
+
+    </body>
+
+
+<!-- Mirrored from themes.themewild.com/edulife/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Mar 2025 01:34:51 GMT -->
+</html>
