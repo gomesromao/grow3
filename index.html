@@ -252,14 +252,16 @@
 
   /* Show mobile version */
   .grow-modern-section-mobile {
-    display: block;
-    position: relative;
-    background: url('assets/img/enroll-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 20px;
-    color: white;
-    overflow: hidden;
-  }
+  display: block;
+  position: relative;
+  background: url('assets/img/enroll-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
 
   .grow-modern-section-mobile .grow-modern-overlay {
     position: absolute;
@@ -1486,12 +1488,24 @@ window.addEventListener("load", function () {
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const mobileSection = document.querySelector(".grow-modern-section-mobile");
+
+    if (!mobileSection) return;
+
     const animatedElements = mobileSection.querySelectorAll(".grow-slide-up");
 
     function revealOnScroll() {
       const sectionTop = mobileSection.getBoundingClientRect().top;
       if (sectionTop < window.innerHeight * 0.85) {
-        animatedElements.forEach(el => el.classList.add("visible"));
+        // Ativa fade-in da seção inteira
+        mobileSection.classList.add("visible");
+
+        // Ativa efeito de "subir" nos elementos internos
+        animatedElements.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, index * 150);
+        });
+
         window.removeEventListener("scroll", revealOnScroll);
       }
     }
@@ -1500,6 +1514,7 @@ window.addEventListener("load", function () {
     revealOnScroll();
   });
 </script>
+
 
     </body>
 
