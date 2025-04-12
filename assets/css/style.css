@@ -462,7 +462,7 @@ Version: 1.1
 	margin: 171px 0 0;
 }
 .home-slider .single-slider h1 {
-	font-size: 55px;
+	font-size: 90px;
 	line-height: 70px;
 	text-transform: capitalize;
 	color: #fff;
@@ -471,6 +471,9 @@ Version: 1.1
 }
 .home-slider .single-slider h1 span{
 	color: #47c7a2; 
+}
+.home-slider .single-slider h1 .grow-static {
+  color: white !important;
 }
 .home-slider .single-slider p {
 	font-size: 16px;
