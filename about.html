@@ -37,48 +37,98 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
 		<link href=" https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css " rel="stylesheet">
-		<style>
-		.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+
+
+
+<style>
+
+.cta .cta-inner::before {
+  opacity: 0.9;
+  background:#000;
 }
 
+
+.fa-x-custom i {
+  font-family: inherit !important;
+  font-style: normal !important;
+  font-size: 0 !important;
+  position: relative;
+}
+
+.fa-x-custom i::before {
+  content: "𝕏"; /* Unicode estilizado do X */
+  font-size: 18px;
+  font-family: 'Arial Black', sans-serif;
+  color: inherit;
+ position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Highlighted text for dynamic green content */
+.grow-dynamic {
+  color: #54ff07 !important;
+}
+
+/* Main title override */
+.tt2 {
+  font-size: 3.5rem !important;
+  color: white !important;
+}
+
+/* Fullscreen video background */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Slider paragraph style */
+.home-slider .single-slider .text-center p {
+  font-size: 20px !important;
+  color: #fff !important;
+  padding: 10px 100px !important;
+  font-weight: 500 !important;
+}
+
+/* Video overlay settings */
 .bg-video img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.30); 
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
+/* Ensure proper z-index stacking */
 .single-slider.overlay {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .single-slider .container,
 .single-slider .slider-text {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
+/* Leadership section - desktop */
 .grow-leadership-block {
   background-color: #fff;
-  padding: 130px 20px;
+  padding: 70px 20px;
 }
 
 .grow-leadership-container {
@@ -88,9 +138,7 @@
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-
-  /* animation inittial state */
-  opacity: 1;
+  opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease-out;
 }
@@ -106,7 +154,7 @@
 }
 
 .grow-leadership-left h2 {
-  font-size: 2.15rem;
+  font-size: 3.15rem;
   color: #252525;
   line-height: 1.4;
   font-weight: 900;
@@ -128,157 +176,507 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 768px) {
-  .grow-leadership-container {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .grow-leadership-left,
-  .grow-leadership-right {
-    flex: 1 1 100%;
-    padding: 10px 0;
-  }
-
-  .grow-leadership-left h2 {
-    font-size: 1.5rem;
-  }
-}
-
-	.icon-group-grow i {
+.icon-group-grow i {
   color: white;
   padding-top: 3px;
   font-size: 1.3rem;
 }
 
- .grow-section {
-    background: white;
-    text-align: center;
-    padding: 100px 20px;
-  }
+/* Grow section title styles */
+.grow-section {
+  background: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-  .grow-title {
-    font-size: 3.0rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #252525;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
+.grow-title-wrapper {
+  display: table;
+  margin: 0 auto;
+  margin-top: 5%;
+}
 
-  .grow-static {
-    color: #252525;
-    white-space: nowrap;
-  }
+.grow-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  white-space: nowrap;
+}
 
-  .grow-dynamic {
-    color: #46c6a1;
-    display: inline-block;
-    width: 250px; 
-    text-align: left;
-    margin-left: 8px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    white-space: nowrap;
-  }
+.grow-static {
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.grow-dynamic {
+  color: #46c6a1;
+  display: inline-block;
+  text-align: left;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  white-space: nowrap;
+}
 
 
-  
-  @media (max-width: 500px) {
+
+/* -------------------- MOBILE STYLES -------------------- */
+@media (max-width: 500px) {
   .grow-title {
     flex-direction: column;
   }
 
-  .grow-dynamic {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-    font-size: 2.5rem; /* opcional: para ajustar o tamanho no mobile */
-    white-space: normal; /* permite quebra de linha no mobile */
+  .grow-title-wrapper {
+    display: none;
   }
-  
+
   .grow-section {
-  padding:60px 20px;
+    padding: 60px 20px;
+  }
 }
-}
+
+@media (min-width: 768px) {
+  .grow-title-wrapper-mobile {
+    display: none;
+  }
   
-  @media (max-width: 767px) {
-  .grow-leadership-block {
+  .grow-modern-section-mobile {
+  display: none;
+}
+
+  .button-mobile {
+    display: none;
+  }
+
+  .grow-leadership-mobile {
+    display: none;
+  }
+}
+
+/* ----------- MOBILE (up to 767px) ----------- */
+@media (max-width: 767px) {
+  .grow-title-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+ .grow-modern-section {
+    display: none !important;
+  }
+
+  /* Show mobile version */
+  .grow-modern-section-mobile {
+  display: block;
+  position: relative;
+  background: url('assets/img/enroll-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+  .grow-modern-section-mobile .grow-modern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+  }
+
+  .grow-modern-mobile-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .grow-main-title {
+    font-size: 2.3rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .grow-main-title .bold {
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+
+  .grow-main-title .highlight-green {
+    color: #46c6a1;
+    font-weight: 900;
+  }
+
+  .grow-paragraph {
+    font-size: 1rem;
+    color: #eee;
+    line-height: 1.6;
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .grow-card {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  .grow-icon-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .grow-icon-text i {
+    font-size: 1.3rem;
+    padding-top: 4px;
+  }
+
+  .grow-icon-text p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Fade and slide effect */
+  .grow-slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .grow-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .grow-modern-section-mobile.visible {
+    opacity: 1;
+  }
+
+
+  .grow-leadership-mobile {
+    display: block;
     background-color: #fff;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    text-align: center;
   }
-  
-  
-  #about-us{
-  max-width:100% !important;
+
+  .grow-leadership-mobile-container h2 {
+    font-size: 2.15rem;
+    color: #252525;
+    line-height: 1.4;
+    font-weight: 900;
+    margin-bottom: 20px;
   }
-  
-.cta .cta-inner {
-  padding:
-2.0rem !important;
-}
 
-}
-
-
-@media only screen and (max-width: 767px) {
-  .home-slider .single-slider .slider-text, .home-slider .single-slider .text-center, .home-slider .single-slider .text-right {
-    text-align: left !important;
-    margin-left: 8%;
+  .grow-leadership-mobile-container .grow-highlight {
+    color: #46c6a1;
   }
-}
-	@media only screen and (max-width: 767px) {
-  .home-slider .single-slider h1 {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  .home-slider .single-slider .slider-text p, .home-slider .single-slider .text-center p, .home-slider .single-slider .text-right p {
+  .grow-leadership-mobile-container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .grow-leadership-block {
+    display: none;
+    background-color: #fff;
+    padding: 0px 20px;
+  }
+
+  .header-inner.header-inner3 .container {
+    padding-top: 0%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .button-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .button-mobile .btn {
+    white-space: nowrap;
+    padding: 10px 20px;
     font-size: 16px;
   }
-  
-  .courses {
-  padding: 60px 0;
+
+  .grow-leadership-container {
+    opacity: 1 !important;
+    padding-bottom: 80px !important;
   }
-}
 
+  .home-slider .single-slider .text-center p {
+    font-size: 16px !important;
+    color: #fff !important;
+    padding: 10px 10px !important;
+    font-weight: 500 !important;
+	width: 60%;
+    margin:auto;
+  }
 
-@media (max-width: 768px) {
+  .grow-static-mobile {
+    color: white !important;
+  }
+
+  .grow-title-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .grow-static-mobile {
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .grow-dynamic-mobile {
+    color: #54ff07 !important;
+    font-size: 2.7rem;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .home-slider .single-slider h1 {
+    font-size: 50px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .home-slider .single-slider .slider-text,
+  .home-slider .single-slider .text-center,
+  .home-slider .single-slider .text-right {
+    text-align: left !important;
+    margin-left: 0%;
+  }
+
+  .home-slider .single-slider .slider-text p,
+  .home-slider .single-slider .text-center p,
+  .home-slider .single-slider .text-right p {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .grow-leadership-left h2 {
     font-size: 2.0rem;
     text-align: left !important;
     margin-left: 8%;
   }
-  
+
   .grow-leadership-right p {
-  text-align: left !important;
+    text-align: left !important;
     margin-left: 8%;
-}
+  }
 
-.enroll {
-  padding:40px 20px 40px;
-}
-.section {
-  padding:
-50px 0;
-}
+  .enroll {
+    padding: 40px 20px 40px;
+  }
 
- .section-title .test{
+  .section {
+    padding: 50px 0px;
+  }
+
+  .brochure {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .section-title .test {
     margin-bottom: 20px;
   }
-  
+
   .footer .footer-top {
-  padding:0px 30px 90px;
+    padding: 0px 30px 90px;
+  }
+
+  .courses {
+    padding: 60px 0;
+  }
 }
 
+/* Modern leadership section layout */
+.grow-modern-section {
+  padding: 100px 0;
+  background: url('assets/img/enroll-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.grow-left-modern .grow-main-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.0;
+  color: white;
+  padding-left: 0%;
+}
+
+.grow-main-title .bold {
+  font-weight: 900;
+  font-size: 3.7rem;
+  text-transform: uppercase;
+}
+
+.grow-main-title .highlight-green {
+  color: #54ff07;
+  font-weight: 900;
+}
+
+.grow-right-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 10px;
+}
+
+.grow-card {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grow-icon-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.grow-icon-text i {
+  font-size: 1.4rem;
+  color: white;
+  padding-top: 4px;
+}
+
+.grow-icon-text p,
+.grow-icon-text div p {
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.grow-paragraph {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #eee;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  .grow-left-modern .grow-main-title {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .grow-main-title .bold {
+    font-size: 2.6rem;
+  }
+
+  .grow-right-modern {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .grow-icon-text {
+    flex-direction: row;
+  }
 }
 
 
+/* Fade-in only for the full section */
+.grow-modern-section {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
 
-		</style>
+.grow-modern-section.visible {
+  opacity: 1;
+}
+
+/* Slide-up for texts */
+.grow-slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.grow-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.grow-modern-section.overlay2 {
+  position: relative;
+  z-index: 1;
+}
+
+.grow-modern-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* leve overlay escuro */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.grow-modern-section .container {
+  position: relative;
+  z-index: 3; /* garante que o conteúdo fique acima do overlay */
+}
+
+
+@media (max-width: 767px) {
+  .cta .cta-inner {
+    padding: 2.0rem !important;
+  }
+    #about-us {
+    max-width: 100% !important;
+  }
+  
+}
+
+</style>
 		
 		
 
@@ -319,7 +717,7 @@
 							
 							<ul class="social">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -403,7 +801,7 @@
                                         <!-- End Main Menu -->
                                         <!-- button -->
                                         <div class="button">
-                                            <a href="contact.html" class="btn"><i class="far fa-pencil"></i>Apply Now</a>
+                                            <a href="contact.html" class="btn"><i class="fa fa-sign-in"></i>Login</a>
                                         </div>
                                         <!--/ End Button -->
                                     </div> 
@@ -420,70 +818,85 @@
 		
 		<!-- Slider Area -->
 		<section class="home-slider">
-			<div class="hero-slider owl-carousel owl-theme">
-				<!-- Single Slider -->	
-				<!--/ End Single Slider -->
-				<!-- Single Slider -->
-			<div class="single-slider overlay">
+  <div class="single-slider overlay">
     <video autoplay muted loop playsinline class="bg-video">
         <source src="assets/img/slider/grow.mp4" type="video/mp4">
         <img src="assets/img/slider/2.png" alt="" />
     </video>
 
-    <!-- Filter -->
     <div class="video-overlay"></div>
 
     <div class="container">
         <div class="row">
             <div class="slider-text text-center">
-                <h1>Digital Business Strategy <br>& <span>Leadership Courses</span></h1>
+			<div class="grow-title-wrapper">
+                <h1 class="grow-title">
+                    <span class="grow-static">Grow </span>
+                    <span class="grow-dynamic" id="grow-dynamic"></span>
+                </h1></div>
+				
+				<div class="grow-title-wrapper-mobile">
+                <h1 class="grow-title-mobile">
+                    <span class="grow-static-mobile">Grow </span>
+                    <span class="grow-dynamic-mobile" id="grow-dynamic-mobile"></span>
+                </h1></div>
+				
+				
+				
+				
                 <p>Lead with confidence. Embrace innovation. Drive sustainable results. <br>Dot Grow is your partner in redefining the future.</p>
                 <div class="button">
-                    <a href="index.html#courses" class="btn primary">Our Courses</a>
-                    <a href="#about-us" class="btn">Learn More</a>
+                    <a href="#courses" class="btn primary">Our Courses</a>
+                    <a href="digital-business-strategy-&-leadership.html" class="btn">Learn More</a>
                 </div>
+				
+			<div class="button-mobile">
+  <a href="#courses" class="btn primary">Our Courses</a>
+  <a href="digital-business-strategy-&-leadership.html" class="btn">Learn More</a>
+</div>
+	
+				
             </div>
         </div>
     </div>
-</div>
-
-</div>
-				<!--/ End Single Slider -->
-				<!-- Single Slider -->
-			
-				<!--/ End Single Slider -->
-			</div>
-		</section>
+  </div>
+</section>
 		<!--/ End Slider Area -->
 		
 		
 		
 		
-	
-		
-	
 		
 		
 		
-		
-		<section class="grow-leadership-block">
+<section class="grow-leadership-block">
   <div class="grow-leadership-container scroll-fade-in">
     <div class="grow-leadership-left">
       <h2>
-        Bold leadership. <span class="grow-highlight">Global insights.</span><br>
-        Local impact.
+        Thinking Boldly. <span class="grow-highlight"><br>Leading Confidently.</span><br>
       </h2>
     </div>
     <div class="grow-leadership-right">
       <p>
-        At .Grow, we expand possibilities, drive transformation, and empower agile leaders with real-world expertise. 
-        With a hands-on approach, we equip you to lead, innovate, and create lasting impact.
+        .Grow is more than a company—we are a force for change. Dynamic and deeply rooted in the heart of the Dutch Caribbean, we embrace the complexity and resilience that define our region. Our reach extends beyond the Caribbean, bringing ideas and expertise to and from Latin America, the Netherlands, and the Middle East— we empower leaders to think boldly, act decisively, and turn adversity into innovation.
       </p>
     </div>
   </div>
+</section>
+		
+	  <section class="grow-leadership-mobile">
+  <div class="grow-leadership-mobile-container">
+    <h2>
+      Bold leadership <br>
+      <span class="grow-highlight">Global insights</span><br>
+      Local impact
+    </h2>
+    <p>
+      At .Grow, we expand possibilities, drive transformation, and empower agile leaders with real-world expertise. 
+      With a hands-on approach, we equip you to lead, innovate, and create lasting impact.
+    </p>
+  </div>
 </section>	
-		
-		
 		
 		
 		
@@ -510,7 +923,7 @@
     }
 	
 	  .cta {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(40px);
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
@@ -636,7 +1049,7 @@
 								<h4>Ruth A Chance<span>Associate Professor</span></h4>
 								<ul class="social">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								</ul>
@@ -652,7 +1065,7 @@
 								<h4 class="name">Melania Thompson<span class="work">Professor</span></h4>
 								<ul class="social">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								</ul>
@@ -668,7 +1081,7 @@
 								<h4 class="name">Richard R Myers<span class="work">Associate Professor</span></h4>
 								<ul class="social">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								</ul>
@@ -684,7 +1097,7 @@
 								<h4 class="name">Marie M Callaway<span class="work">Professor</span></h4>
 								<ul class="social">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								</ul>
@@ -707,7 +1120,7 @@
 							<!-- About -->
 							<div class="single-widget about">
 								<div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
-								<p>Grow empowers individuals and organizations through advanced education and consulting. Centered on quantum leadership, our programs foster adaptability, innovation, and resilience—equipping leaders to thrive in a fast-changing digital world.</p>
+								<p>.Grow empowers individuals and organizations through advanced education and consulting. Centered on quantum leadership, our programs foster adaptability, innovation, and resilience—equipping leaders to thrive in a fast-changing digital world.</p>
 								<ul class="list">
 									<li><i class="far fa-solid-phone"></i>(+599) 9663-3746</li>
 									<li><i class="far fa-solid-envelope"></i> <a href="https://themes.themewild.com/cdn-cgi/l/email-protection#c9a0a7afa689acb1a8a4b9a5ace7aaa6a4"><span class="__cf_email__" data-cfemail="731a1d151c33160b121e031f165d101c1e">vanessa@thisisgrow.net </span></a></li>
@@ -741,17 +1154,23 @@
 									<div class="single-news">
 										<img src="assets/img/blog/sm-1.jpg" alt="#">
 										<h4><a href="2-day-governance-masterclass.html">2-Day Governance Masterclass</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																			<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 									<div class="single-news">
 										<img src="assets/img/blog/sm-2.jpg" alt="#">
 										<h4><a href="digital-business-strategy-&-leadership.html">Digital Business Strategy & Leadership</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																		<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 									<div class="single-news">
 										<img src="assets/img/blog/sm-3.jpg" alt="#">
 										<h4><a href="agile-talent-management.html">Agile Talent Management</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																		<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 								</div>
 							</div>
@@ -774,7 +1193,7 @@
 							<!-- Social -->
 							<ul class="social">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -839,7 +1258,7 @@
         <script src="assets/js/main.js"></script>
 		
 		
-		<script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const fadeInSection = document.querySelector('.scroll-fade-in');
 
@@ -860,65 +1279,141 @@
 
 
 
-
-
 <script>
+  window.addEventListener("load", function () {
+    const phrases = [
+      "Your Knowledge",
+      "Your Business",
+      "Your Ideas",
+      "Your Impact",
+      "Your Potential"
+    ];
 
- const phrases = [
-    "Your Knowledge.",
-    "Your Business.",
-    "Your Ideas.",
-    "Your Impact.",
-    "Your Potential."
-  ];
+    // Usa querySelectorAll porque o Owl Carousel clona slides
+    const dynamicTexts = document.querySelectorAll("#grow-dynamic");
+    let index = 0;
 
-  const dynamicText = document.getElementById("grow-dynamic");
-  let index = 0;
-
-  function showNextPhrase() {
-    // Esconde com fade-out
-    dynamicText.style.opacity = 0;
-
-    setTimeout(() => {
-      // Atualiza texto
-      dynamicText.textContent = phrases[index];
-      // Mostra com fade-in
-      dynamicText.style.opacity = 1;
-
-      // Avança pro próximo
-      index = (index + 1) % phrases.length;
-    }, 500); // tempo do fade-out
-  }
-
-  // Inicia
-  showNextPhrase();
-  setInterval(showNextPhrase, 3000);
-
-
-
-
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const cta = document.querySelector('.cta');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          cta.classList.add('fade-in');
-          observer.unobserve(cta); // para animar só uma vez
-        }
+    function showNextPhrase() {
+      dynamicTexts.forEach((el) => {
+        el.style.opacity = 0;
       });
-    }, {
-      threshold: 0.1
-    });
 
-    if (cta) {
-      observer.observe(cta);
+      setTimeout(() => {
+        dynamicTexts.forEach((el) => {
+          el.textContent = phrases[index];
+          el.style.opacity = 1;
+        });
+        index = (index + 1) % phrases.length;
+      }, 500);
     }
+
+    showNextPhrase();
+    setInterval(showNextPhrase, 3000);
   });
 </script>
+
+<script>
+window.addEventListener("load", function () {
+  const phrases = [
+    "Your Knowledge",
+    "Your Business",
+    "Your Ideas",
+    "Your Impact",
+    "Your Potential"
+  ];
+
+  const dynamicTextMobile = document.getElementById("grow-dynamic-mobile");
+  let index = 0;
+
+  function showNextPhraseMobile() {
+    if (!dynamicTextMobile) return;
+
+    dynamicTextMobile.style.opacity = 0;
+
+    setTimeout(() => {
+      dynamicTextMobile.textContent = phrases[index];
+      dynamicTextMobile.style.opacity = 1;
+      index = (index + 1) % phrases.length;
+    }, 500);
+  }
+
+  showNextPhraseMobile();
+  setInterval(showNextPhraseMobile, 3000);
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".grow-visual-wrapper");
+
+    function handleScroll() {
+      const rect = wrapper.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.85) {
+        wrapper.classList.add("grow-visible");
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // inicializa se já estiver na tela
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".grow-modern-section");
+    const slideUps = document.querySelectorAll(".grow-slide-up");
+
+    function handleScroll() {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.85) {
+        section.classList.add("visible");
+
+        slideUps.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, index * 150); // delay para efeito cascata
+        });
+
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileSection = document.querySelector(".grow-modern-section-mobile");
+
+    if (!mobileSection) return;
+
+    const animatedElements = mobileSection.querySelectorAll(".grow-slide-up");
+
+    function revealOnScroll() {
+      const sectionTop = mobileSection.getBoundingClientRect().top;
+      if (sectionTop < window.innerHeight * 0.85) {
+        // Ativa fade-in da seção inteira
+        mobileSection.classList.add("visible");
+
+        // Ativa efeito de "subir" nos elementos internos
+        animatedElements.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, index * 150);
+        });
+
+        window.removeEventListener("scroll", revealOnScroll);
+      }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  });
+</script>
+
 
     </body>
 

@@ -37,6 +37,26 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
 		<style>
+		
+		
+		.fa-x-custom i {
+  font-family: inherit !important;
+  font-style: normal !important;
+  font-size: 0 !important;
+  position: relative;
+}
+
+.fa-x-custom i::before {
+  content: "𝕏"; /* Unicode estilizado do X */
+  font-size: 18px;
+  font-family: 'Arial Black', sans-serif;
+  color: inherit;
+position: relative;
+  top: 0;
+  left: 0;
+}
+		
+		
 		.breadcrumbs {
 	background: url('assets/img/testimonial_mob.png') !important;
 	 background-size: cover !important;
@@ -131,7 +151,7 @@ color: #00c08b;
 							
 							<ul class="social">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -215,7 +235,7 @@ color: #00c08b;
                                         <!-- End Main Menu -->
                                         <!-- button -->
                                         <div class="button">
-                                            <a href="contact.html" class="btn"><i class="far fa-pencil"></i>Apply Now</a>
+                                            <a href="contact.html" class="btn"><i class="fa fa-sign-in"></i>Login</a>
                                         </div>
                                         <!--/ End Button -->
                                     </div> 
@@ -443,7 +463,7 @@ color: #00c08b;
 							<!-- About -->
 							<div class="single-widget about">
 								<div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
-								<p>Grow empowers individuals and organizations through advanced education and consulting. Centered on quantum leadership, our programs foster adaptability, innovation, and resilience—equipping leaders to thrive in a fast-changing digital world.</p>
+								<p>.Grow empowers individuals and organizations through advanced education and consulting. Centered on quantum leadership, our programs foster adaptability, innovation, and resilience—equipping leaders to thrive in a fast-changing digital world.</p>
 								<ul class="list">
 									<li><i class="far fa-solid-phone"></i>(+599) 9663-3746</li>
 									<li><i class="far fa-solid-envelope"></i> <a href="https://themes.themewild.com/cdn-cgi/l/email-protection#c9a0a7afa689acb1a8a4b9a5ace7aaa6a4"><span class="__cf_email__" data-cfemail="731a1d151c33160b121e031f165d101c1e">vanessa@thisisgrow.net </span></a></li>
@@ -477,17 +497,23 @@ color: #00c08b;
 									<div class="single-news">
 										<img src="assets/img/blog/sm-1.jpg" alt="#">
 										<h4><a href="2-day-governance-masterclass.html">2-Day Governance Masterclass</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																		<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 									<div class="single-news">
 										<img src="assets/img/blog/sm-2.jpg" alt="#">
 										<h4><a href="digital-business-strategy-&-leadership.html">Digital Business Strategy & Leadership</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																			<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 									<div class="single-news">
 										<img src="assets/img/blog/sm-3.jpg" alt="#">
 										<h4><a href="agile-talent-management.html">Agile Talent Management</a></h4>
-										<p><i class="far fa-solid-calendar-alt"></i> August 30, 2022</p>
+																			<p>
+  <a href="brochure.pdf" target="_blank" style="color: white; text-decoration: none;">Download Brochure</a>
+</p>
 									</div>
 								</div>
 							</div>
@@ -510,7 +536,7 @@ color: #00c08b;
 							<!-- Social -->
 							<ul class="social">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" class="fa-x-custom"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
