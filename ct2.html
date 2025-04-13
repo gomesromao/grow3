@@ -45,6 +45,25 @@
   flex-direction: column;
 }
 
+ @media (min-width: 769px) {
+  .course-tabs-mobile {
+  display: none;
+}}
+
+
+.course-title-wrapper {
+  padding: 10px 1rem;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.course-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
 .single-course,
 .course-feature {
   display: flex;
@@ -97,6 +116,7 @@ margin-bottom: 5%;
   .tab-content h3 {
     margin-top: 1.5rem;
     color: #00c08b;
+	padding-bottom: 20px;
   }
 
   /* ------------------------
@@ -183,6 +203,59 @@ margin-bottom: 5%;
       text-align: left !important;
       margin-left: 8%;
     }
+	
+	
+	.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #f6f6f6 !important;
+  }
+  
+  .accordion-button:focus {
+  z-index: 3;
+  border-color:#86b7fe00  !important;
+  box-shadow:0 0 0 .25rem rgba(13, 110, 253, 0)  !important;
+  }
+  
+  
+	
+	
+	.course-title {
+  font-size: 2.15rem;
+}
+	
+	.course-tabs {
+    display: none;
+  }
+  
+  .course-tabs-mobile {
+  padding: 2rem 1rem;
+}
+
+.course-tabs-mobile .accordion-button {
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #f9f9f9;
+}
+
+.course-tabs-mobile .accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.course-tabs-mobile h2.tab-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00c08b;
+}
+
+.course-tabs-mobile .tab-subtitle {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #00c08b;
+}
+	  .courses.single .course-feature{
+	  display: none;
+	  }
 
     .grow-leadership-right p {
       text-align: left !important;
@@ -208,6 +281,17 @@ margin-bottom: 5%;
     .footer .footer-top {
       padding: 0px 30px 90px;
     }
+	
+	.course-tabs-mobile h2.tab-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .header-inner .header-inner3 .container{
+  padding-top:15%;
+  }
+	
   }
 </style>
 
@@ -303,9 +387,13 @@ margin-bottom: 5%;
 			<!--/ End Header Menu -->
 		</header>
 		<!-- End Header -->
+
 		
+      	<section class="courses single section" style="padding: 30px 0px !important;">
 		
-      	<section class="courses single section">
+			<div class="course-title-wrapper">
+  <h1 class="course-title" >2-Day Governance Masterclass</h1>
+</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -387,12 +475,13 @@ margin-bottom: 5%;
     <li class="nav-item">
       <button class="nav-link" id="audience-tab" data-bs-toggle="tab" data-bs-target="#audience" type="button" role="tab">Who Should Attend?</button>
     </li>
+		 <li class="nav-item">
+      <button class="nav-link" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning" type="button" role="tab">What You’ll Learn</button>
+    </li>
     <li class="nav-item">
       <button class="nav-link" id="dates-tab" data-bs-toggle="tab" data-bs-target="#dates" type="button" role="tab">Dates & Locations</button>
     </li>
-	 <li class="nav-item">
-      <button class="nav-link" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning" type="button" role="tab">What You’ll Learn</button>
-    </li>
+
 	
 	
 	
@@ -468,7 +557,6 @@ margin-bottom: 5%;
         <li>Analyze real-world governance challenges through interactive case studies.</li>
         <li>Foster innovation and accountability within organizations.</li>
       </ul>
-      <p class="tab-text"><strong>Investment:</strong> $1,495 (includes course materials, meals, and certification)</p>
     </div>
 	
 	
@@ -480,14 +568,133 @@ margin-bottom: 5%;
 
 
 
-		
+
+
+
+<!-- Mobile Accordion Tabs -->
+<section class="course-tabs-mobile d-md-none">
+  <div class="accordion" id="accordionCourseMobile">
+  
+    <!-- Overview -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOverviewMobile">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOverviewMobile" aria-expanded="true" aria-controls="collapseOverviewMobile">
+          Overview
+        </button>
+      </h2>
+      <div id="collapseOverviewMobile" class="accordion-collapse collapse show" aria-labelledby="headingOverviewMobile" data-bs-parent="#accordionCourseMobile">
+        <div class="accordion-body">
+          <h2 class="tab-title">Master Modern Governance & AI Oversight</h2>
+          <p class="tab-text">This interactive program provides board members, governance professionals, and policymakers with the expertise to strengthen governance frameworks, ensure compliance, and manage risks in an increasingly digital world...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structure -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingStructureMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStructureMobile" aria-expanded="false" aria-controls="collapseStructureMobile">
+          Course Structure
+        </button>
+      </h2>
+      <div id="collapseStructureMobile" class="accordion-collapse collapse" aria-labelledby="headingStructureMobile" data-bs-parent="#accordionCourseMobile">
+        <div class="accordion-body">
+          <p class="tab-text">A dynamic mix of expert-led sessions, case studies, and interactive discussions covering:</p>
+          <h3 class="tab-subtitle">Day 1: Governance in the Digital Era</h3>
+          <ul class="tab-list">
+            <li>Key governance structures, responsibilities, and digital transformation impact.</li>
+            <li>AI’s role in governance and risk identification.</li>
+            <li>Case studies on governance failures and lessons learned.</li>
+            <li>Regulatory landscape overview (GDPR, AI Act).</li>
+          </ul>
+          <h3 class="tab-subtitle">Day 2: AI, Cybersecurity & Risk Management</h3>
+          <ul class="tab-list">
+            <li>Establishing ethical AI governance frameworks.</li>
+            <li>Addressing cybersecurity, privacy, and regulatory risks.</li>
+            <li>Interactive exercises on AI project evaluation and business impact.</li>
+            <li>Strategies for fostering a culture of accountability and innovation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Who Should Attend -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingAudienceMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudienceMobile" aria-expanded="false" aria-controls="collapseAudienceMobile">
+          Who Should Attend?
+        </button>
+      </h2>
+      <div id="collapseAudienceMobile" class="accordion-collapse collapse" aria-labelledby="headingAudienceMobile" data-bs-parent="#accordionCourseMobile">
+        <div class="accordion-body">
+          <ul class="tab-list">
+            <li>Board members & executives in finance, telecom, energy, and government.</li>
+            <li>Government officials driving public policy and digital initiatives.</li>
+            <li>Governance, risk & compliance professionals in banking, insurance, and healthcare.</li>
+            <li>IT & digital transformation leaders from tech and digital sectors.</li>
+            <li>Investors & capital providers in venture capital and sustainable investment.</li>
+            <li>AI ethics & data governance specialists in fintech, e-commerce, and healthcare.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- What You’ll Learn -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingLearningMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLearningMobile" aria-expanded="false" aria-controls="collapseLearningMobile">
+          What You’ll Learn
+        </button>
+      </h2>
+      <div id="collapseLearningMobile" class="accordion-collapse collapse" aria-labelledby="headingLearningMobile" data-bs-parent="#accordionCourseMobile">
+        <div class="accordion-body">
+          <ul class="tab-list">
+            <li>Strengthen governance practices for the digital era.</li>
+            <li>Implement AI governance frameworks and ethical oversight.</li>
+            <li>Navigate regulatory compliance, data governance, and cybersecurity risks.</li>
+            <li>Analyze real-world governance challenges through interactive case studies.</li>
+            <li>Foster innovation and accountability within organizations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dates & Locations -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingDatesMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDatesMobile" aria-expanded="false" aria-controls="collapseDatesMobile">
+          Dates & Locations
+        </button>
+      </h2>
+      <div id="collapseDatesMobile" class="accordion-collapse collapse" aria-labelledby="headingDatesMobile" data-bs-parent="#accordionCourseMobile">
+        <div class="accordion-body">
+          <ul class="tab-list">
+            <li><strong>Curaçao</strong> | June 5–6, 2025 | Avila Beach Hotel</li>
+            <li><strong>Aruba</strong> | July 7–8, 2025 | Holiday Inn Beach Hotel</li>
+            <li><strong>Guyana</strong> | August 11–12, 2025 | Guyana Marriott Hotel</li>
+            <li><strong>Sint Maarten</strong> | September 15–16, 2025 | Holland House Beach Hotel</li>
+          </ul>
+          <p class="tab-text"><strong>Investment:</strong> $1,495 (includes course materials, meals, and certification)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
 
 
 
-<!-- Bootstrap JS for Tabs functionality -->
+
+
+
+
+
+
+
+		<!-- Bootstrap JS for Tabs functionality -->
 <script>
   const triggerTabList = document.querySelectorAll('#courseTab button')
   triggerTabList.forEach(triggerEl => {
