@@ -265,6 +265,10 @@
     width: 100%;
     max-width: 100%;
   }
+  
+ .test{
+  padding-right: 20px !important;
+}
 
  .grow-modern-section {
     display: none !important;
@@ -933,9 +937,9 @@
 							<div class="course-meta">
 								<div class="meta-left">
 									<span><i class="far fa-users"></i>60 Seats</span>
-									<span><i class="far fa-clock"></i>2 Days</span>
+									<span><i class="far fa-clock"></i>3 Years</span>
 								</div>
-								<span class="price">$1,495</span>
+								<span class="price">$850</span>
 							</div>
 						</div>
 						<!--/ End Single Course -->
@@ -957,9 +961,9 @@
 							<div class="course-meta">
 								<div class="meta-left">
 									<span><i class="far fa-users"></i>60 Seats</span>
-									<span><i class="far fa-clock"></i>3 Days</span>
+									<span><i class="far fa-clock"></i>3 Years</span>
 								</div>
-								<span class="price">$2,800</span>
+								<span class="price">$850</span>
 							</div>
 						</div>
 						<!--/ End Single Course -->
@@ -981,9 +985,9 @@
 							<div class="course-meta">
 								<div class="meta-left">
 									<span><i class="far fa-users"></i>60 Seats</span>
-									<span><i class="far fa-clock"></i>4 Days</span>
+									<span><i class="far fa-clock"></i>3 Years</span>
 								</div>
-								<span class="price">$----</span>
+								<span class="price">$850</span>
 							</div>
 						</div>
 						<!--/ End Single Course -->
@@ -1146,6 +1150,7 @@
 		<!--/ End Events -->
 		
 		<!-- Fun Facts -->
+
 <div class="fun-facts overlay" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="grow-carousel-wrapper">
@@ -1167,30 +1172,31 @@
         }
 
         .grow-carousel-item {
-          min-width: 150px;
+          min-width: 200px;
           padding: 0 40px;
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        .grow-carousel-item i {
-          font-size: 3rem;
-          color: white;
-          opacity: 0.8;
+        .grow-carousel-item img {
+          max-height: 200px;
+          max-width: 100%;
+          opacity: 1;
           transition: opacity 0.3s ease;
+		  filter: drop-shadow(15px 15px 15px #2222223b);
         }
 
-        .grow-carousel-item i:hover {
+        .grow-carousel-item img:hover {
           opacity: 1;
         }
 
         .grow-carousel-title {
           color: white;
           text-align: center;
-          font-size: 32px;
+          font-size: 38px;
           font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+          font-weight: 700;
           margin-bottom: 40px;
         }
 
@@ -1203,37 +1209,63 @@
           }
         }
 
-        /* Responsivo opcional */
         @media (max-width: 768px) {
           .grow-carousel-item {
-            min-width: 120px;
+            min-width: 150px;
             padding: 0 20px;
           }
+
+          .grow-carousel-item img {
+            max-height: 150px;
+          }
+		  
+		  .fun-facts{
+		  padding: 40px 0 40px !important;	  
+		  }
         }
       </style>
 
       <h2 class="grow-carousel-title">Our Partners:</h2>
       <div class="grow-carousel-track">
-        <!-- Bloco duplicado para criar loop contínuo -->
+        <!-- Duplicado para loop contínuo -->
         <div class="grow-carousel-logos">
-          <div class="grow-carousel-item"><i class="fab fa-js"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-linkedin-in"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-dribbble"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-medium-m"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-github"></i></div>
+          <!-- Logos 1 a 15 -->
+          <!-- você pode gerar isso com JS se quiser dinamizar -->
+          <div class="grow-carousel-item"><img src="assets/img/partners/1.png" alt="Partner 1"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/2.png" alt="Partner 2"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/3.png" alt="Partner 3"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/4.png" alt="Partner 4"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/5.png" alt="Partner 5"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/6.png" alt="Partner 6"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/7.png" alt="Partner 7"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/8.png" alt="Partner 8"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/9.png" alt="Partner 9"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/10.png" alt="Partner 10"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/11.png" alt="Partner 11"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/12.png" alt="Partner 12"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/13.png" alt="Partner 13"></div>  
         </div>
+        <!-- Duplicado -->
         <div class="grow-carousel-logos">
-          <div class="grow-carousel-item"><i class="fab fa-js"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-linkedin-in"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-dribbble"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-medium-m"></i></div>
-          <div class="grow-carousel-item"><i class="fab fa-github"></i></div>
+          <!-- Mesmos 15 logos -->
+          <div class="grow-carousel-item"><img src="assets/img/partners/1.png" alt="Partner 1"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/2.png" alt="Partner 2"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/3.png" alt="Partner 3"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/4.png" alt="Partner 4"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/5.png" alt="Partner 5"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/6.png" alt="Partner 6"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/7.png" alt="Partner 7"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/8.png" alt="Partner 8"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/9.png" alt="Partner 9"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/10.png" alt="Partner 10"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/11.png" alt="Partner 11"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/12.png" alt="Partner 12"></div>
+          <div class="grow-carousel-item"><img src="assets/img/partners/13.png" alt="Partner 13"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 
 		

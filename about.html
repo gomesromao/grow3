@@ -277,9 +277,9 @@
   .grow-modern-section-mobile {
   display: block;
   position: relative;
-  background: url('assets/img/enroll-bg.jpg') no-repeat center center;
+  background: url('assets/img/cta-bg.jpg') no-repeat center center;
   background-size: cover;
-  padding: 80px 20px;
+  padding: 40px 20px;
   color: white;
   overflow: hidden;
   opacity: 0;
@@ -292,7 +292,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.10);
     z-index: 1;
   }
 
@@ -313,7 +313,7 @@
 
   .grow-main-title .bold {
     font-size: 2.8rem;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   .grow-main-title .highlight-green {
@@ -545,7 +545,7 @@
 }
 
 .grow-main-title .bold {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 3.7rem;
   text-transform: uppercase;
 }
@@ -563,7 +563,7 @@
 }
 
 .grow-card {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.21);
   padding: 20px;
   border-radius: 15px;
   color: white;
@@ -608,7 +608,7 @@
   }
 
   .grow-main-title .bold {
-    font-size: 2.6rem;
+    font-size: 38px;
   }
 
   .grow-right-modern {
@@ -901,96 +901,120 @@
 		
 		
 		
-<!-- Call To Action -->
-<section class="cta" data-stellar-background-ratio="0.5">
-  <style>
-    @media (min-width: 768px) {
-      .cta-columns {
-        display: flex;
-        gap: 2rem;
-      }
-      .cta-column {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-    }
-    .cta-column {
-      box-sizing: border-box;
-    }
-    .cta-inner h2 i,
-    .cta-inner h3 i {
-      color: white;
-    }
-	
-	  .cta {
-    opacity: 1;
-    transform: translateY(40px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
+<section class="grow-modern-section overlay2" style="background-image: url('assets/img/cta-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0;">
+  <div class="grow-modern-overlay"></div>
+  <div class="container">
+    <div class="text-center text-white mb-5 ">
+      <h2 style="font-size: 38px; font-weight: 700;" class="grow-slide-up">Who We Are</h2>
+      <p class="grow-slide-up" style="font-size: 1.1rem; max-width: 850px; margin: 0 auto; color: white">
+        Founded in Curaçao, Grow bridges the gap between the Caribbean and global markets,
+        creating transformative learning experiences. We are young, disruptive, and technology-driven,
+        committed to practical, forward-thinking education and consulting.
+      </p>
+    </div>
 
-  .cta.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  </style>
-
-  <div class="container" style="max-width: 85%; margin: 0 auto; padding: 6rem 1rem;"id="about-us">
-    <div class="row">
-      <div class="col-12">
-        <div class="cta-inner overlay"  style="background: rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 4.5rem; position: relative; color: white;">
-          <div class="text-content" style="position: relative; z-index: 2;">
-            
-            <!-- Título principal -->
-            <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 1rem;">
-             Who We Are
-            </h2>
-            <p style="margin-bottom: 1.5rem;">
-              Founded in Curaçao, .Grow bridges the gap between the Caribbean and global markets, creating transformative learning experiences. We are young, disruptive, and technology-driven—committed to practical, forward-thinking education and consulting.
-            </p>
-
-            <!-- Colunas -->
-            <div class="cta-columns">
-              
-              <!-- Coluna Esquerda -->
-              <div class="cta-column">
-                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
-                  <i class="fas fa-lightbulb" style="margin-right: 8px;"></i>What We Do
-                </h3>
-                <p><strong>Post-Graduate Courses</strong> – Future-focused programs designed for executives, entrepreneurs, and decision-makers.</p>
-                <p><strong>Consulting Services</strong> – Tailored solutions to help businesses optimize strategy, digital transformation, and leadership.</p>
-                <p style="margin-bottom: 1.5rem;"><strong>Custom Training & Development</strong> – In-company training and personalized learning experiences that drive organizational growth.</p>
-
-                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
-                  <i class="fas fa-eye" style="margin-right: 8px;"></i>Our Vision
-                </h3>
-                <p>To be the top choice for companies and professionals seeking transformative education and consulting, with people at the core of every strategy. We develop leaders who drive impactful business transformation and societal progress.</p>
-              </div>
-
-              <!-- Coluna Direita -->
-              <div class="cta-column">
-                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
-                  <i class="fas fa-heart" style="margin-right: 8px;"></i>Our Values
-                </h3>
-                <p><strong>Trust & Integrity</strong> – We build strong relationships based on transparency and reliability.</p>
-                <p><strong>Collaboration & Community</strong> – Success is achieved together, through shared knowledge and diverse perspectives.</p>
-                <p style="margin-bottom: 1.5rem;"><strong>Innovation & Agility</strong> – We embrace change and push the boundaries of what’s possible.</p>
-
-                <h3 style="font-size: 22px; margin-bottom: 0.5rem;">
-                  <i class="fas fa-globe" style="margin-right: 8px;"></i>Our Global Presence
-                </h3>
-                <p>.Grow is headquartered in Curaçao, with a strong presence in the ABC Islands, Sint Maarten, the Netherlands, Latin America, and the Middle East. Our global reach allows us to bridge ideas and opportunities across diverse business landscapes, ensuring that innovation and leadership development have no borders.</p>
-              </div>
-
-            </div> <!-- fim das colunas -->
-
-          </div> <!-- fim do text-content -->
-        </div> <!-- fim do cta-inner -->
+    <div class="row text-white text-start">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h4 class="fw-bold mb-3 grow-slide-up">What We Do</h4>
+        <p class="grow-slide-up" style=" color:white;"><strong>Post-Graduate Courses</strong> – Focused programs designed for executives, entrepreneurs, and changemakers.</p>
+        <p class="grow-slide-up" style="color:white;"><strong>Consulting Services</strong> – Tailored solutions to help businesses optimize strategy, digital transformation, and leadership.</p>
+        <p  class="grow-slide-up" style="color:white;"><strong>Custom Training & Development</strong> – In-company training and personalized learning experiences that drive organizational growth.</p>
       </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h4 class="fw-bold mb-3 grow-slide-up">Our Values</h4>
+        <p class="grow-slide-up" style="color:white;"><strong>Trust & Integrity</strong> – We build strong relationships based on transparency and reliability.</p>
+        <p class="grow-slide-up" style="color:white;"><strong>Collaboration & Community</strong> – Success is achieved together, through shared knowledge and diverse perspectives.</p>
+        <p class="grow-slide-up" style="color:white;"><strong>Innovation & Agility</strong> – We embrace change and put the latest thinking into practice.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h4 class="fw-bold mb-3 grow-slide-up">Our Vision</h4>
+        <p class="grow-slide-up" style="color:white;">To be the top choice for companies and professionals seeking transformative education and consulting, with real global impact in business and society. We develop leaders who drive impactful businesses and sustainable growth.</p>
+      		<br>  <p class="grow-slide-up" style="color:white;">We are building a global network of forward-thinking professionals who challenge convention, lead with purpose, and drive transformation across industries.</p>
+	  </div>
     </div>
   </div>
 </section>
 
+<style>
+  .grow-modern-section h2,
+  .grow-modern-section h4 {
+    color: #fff;
+  }
 
+  @media (max-width: 767px) {
+    .grow-modern-section {
+      padding: 60px 20px;
+    }
+    .grow-modern-section h2 {
+      font-size: 2.2rem;
+    }
+    .grow-modern-section h4 {
+      font-size: 1.3rem;
+    }
+    .grow-modern-section p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
+
+<section class="grow-modern-section-mobile">
+  <div class="grow-modern-overlay"></div>
+  <div class="grow-modern-mobile-container">
+    <h2 class="grow-main-title">
+      <span class="bold">Who We Are</span>
+    </h2>
+    <p class="grow-paragraph grow-slide-up">
+      Founded in Curaçao, Grow bridges the gap between the Caribbean and global markets,
+      creating transformative learning experiences. We are young, disruptive, and technology-driven,
+      committed to practical, forward-thinking education and consulting.
+    </p>
+
+    <!-- What We Do -->
+    <div class="grow-card grow-slide-up">
+      <div class="grow-icon-text">
+    
+        <div>
+          <h4 style="margin: 0 0 8px; font-weight: 700;">What We Do</h4>
+          <p><strong>Post-Graduate Courses</strong> – Focused programs designed for executives, entrepreneurs, and changemakers.</p>
+          <p><strong>Consulting Services</strong> – Tailored solutions to help businesses optimize strategy, digital transformation, and leadership.</p>
+          <p><strong>Custom Training & Development</strong> – In-company training and personalized learning experiences that drive organizational growth.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Values -->
+    <div class="grow-card grow-slide-up">
+      <div class="grow-icon-text">
+   
+        <div>
+          <h4 style="margin: 0 0 8px; font-weight: 700;">Our Values</h4>
+          <p><strong>Trust & Integrity</strong> – We build strong relationships based on transparency and reliability.</p>
+          <p><strong>Collaboration & Community</strong> – Success is achieved together, through shared knowledge and diverse perspectives.</p>
+          <p><strong>Innovation & Agility</strong> – We embrace change and put the latest thinking into practice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Vision -->
+    <div class="grow-card grow-slide-up">
+      <div class="grow-icon-text">
+    
+        <div>
+          <h4 style="margin: 0 0 8px; font-weight: 700;">Our Vision</h4>
+          <p>
+            To be the top choice for companies and professionals seeking transformative education and consulting,
+            with real global impact in business and society. We develop leaders who drive impactful businesses and sustainable growth.
+          </p>
+		  <p>We are building a global network of forward-thinking professionals who challenge convention, lead with purpose, and drive transformation across industries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -1010,14 +1034,14 @@
 					</div>
 					<div class="col-lg-6 col-12">
 						<div class="about-text">
-							<h2>Join the Movement</h2>
+							<h2   style="font-size:38px; font-weight:700;">Join the Movement</h2>
 							<p>This is just the beginning. .Grow is redefining leadership, breaking barriers, and creating an ecosystem where bold ideas turn into lasting impact. Whether you’re looking to advance your career, scale your business, or explore new opportunities, we’re here to help you grow.</p>
 							<p>At .Grow, we believe that innovation thrives where curiosity meets action. We collaborate with forward-thinking professionals, companies, and changemakers who are ready to challenge the status quo. Through cutting-edge programs, hands-on consulting, and a global community of leaders, we’re not just imagining the future—we’re building it together.</p>
-							<br><p>Are you ready to grow with us?</p>
+							<br><p>.Grow is headquartered in Curaçao, with a strong presence in the ABC Islands, Sint Maarten, the Netherlands, Latin America, and the Middle East. Our global reach allows us to bridge ideas and opportunities across diverse business landscapes, ensuring that innovation and leadership development have no borders.</p>
 							
-							<div class="button">
+							<!--<div class="button">
 								<a href="index.html#courses" class="btn">Our Courses</a>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -1414,6 +1438,31 @@ window.addEventListener("load", function () {
   });
 </script>
 
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".grow-modern-section");
+    const animatedItems = section.querySelectorAll(".grow-slide-up");
+
+    function handleScroll() {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.85) {
+        animatedItems.forEach((el, i) => {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, i * 150); // efeito cascata
+        });
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // já ativa se visível
+  });
+</script>
 
     </body>
 

@@ -172,6 +172,7 @@ th {
 	-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 	color: #ffff;
+	z-index: 99999999999999999999999 !important;
 }
 #scrollUp:hover{
 	background:#252525;

@@ -1983,7 +1983,7 @@ Version: 1.1
 	position: relative;
 }
 .fun-facts::before {
-	background: #46c6a1;
+	background: #31e9b4;
 	opacity: 0.5;
 }
 .fun-facts .single-fact {
@@ -3288,7 +3288,7 @@ width: 100%;
 }
 .footer .single-news {
 	position: relative;
-	padding-left: 85px;
+	padding-left: 0px;
 	margin-bottom: 15px;
 }
 .footer .single-news:last-child{
@@ -3300,6 +3300,7 @@ width: 100%;
 	left: 0;
 	border-radius: 10px;
 	top: 10px;
+	display: none;
 }
 .footer .single-news h4 a {
 	color: #fff;
